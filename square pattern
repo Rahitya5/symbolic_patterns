@@ -1,0 +1,53 @@
+#Problem - 1 (Complete square symbolic pattern)
+#Approach - 1
+
+for i in range(3):
+  for j in range(3):
+    print("*",end=" ")
+  print()
+
+#Appraoch - 2
+
+a = []
+for i in range(3):
+  x = []
+  for j in range(3):
+    x.append("*")
+  a.append(x)
+#print(a)
+for i in a:
+  print(*i,sep=" ")
+
+#Approach - 3
+
+for i in range(3):
+  print("* "*3)
+
+#Problem - 2 Complete nxm symbolic pattern)
+#Approach - 1
+
+r = int(input())
+c = int(input())
+for i in range(r):
+  for j in range(c):
+    print("*",end=" ")
+  print()
+
+#Approach - 2
+
+a = []
+r,c = map(int,input().split())
+for i in range(r):
+  x = []
+  for j in range(c):
+    x.append("*")
+  a.append(x)
+for i in a:
+  print(*i,sep=" ")
+
+#Approach - 3
+
+r = int(input())
+c = int(input())
+for i in range(r):
+  print("* "*c)
